@@ -32,8 +32,8 @@ var api = new ParseServer({
             apiKey: 'abc'
         },
         ios: {
-            pfx: '/home/lovashih/parse-server-example/key.p12',
-            bundleId: 'com.lova.RichSDKDemo',
+            pfx: process.env.P12 || './key.p12',
+            bundleId: process.env.bundleID || 'com.lova.RichSDKDemo',
             production: false
         }
     }
