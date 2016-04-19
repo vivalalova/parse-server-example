@@ -28,8 +28,8 @@ var api = new ParseServer({
     },
     push: {
         android: {
-            senderId: 'abc',
-            apiKey: 'abc'
+            senderId: process.env.Android_SenderID || 'abc',
+            apiKey: process.env.Android_API_Key 'abc'
         },
         ios: {
             pfx: process.env.P12 || './key.p12',
