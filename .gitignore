@@ -1,5 +1,6 @@
 # push key
-
+key.p12
+*.p12
 # Logs
 logs
 *.log
